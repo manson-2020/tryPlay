@@ -1,0 +1,108 @@
+.footer {
+    width: 99vw;
+    background: rgb(246, 246, 246);
+    margin: 45px auto 0;
+}
+
+.footer .footer-top, .footer .footer-bottom {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .footer-top {
+    height: 323px;
+}
+
+.footer .footer-bottom {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.footer-top .consult {
+    box-sizing: content-box;
+    height: 90px;
+    padding-top: 42px;
+}
+
+.consult .left-logo {
+    width: 369px;
+    height: 100%;
+    float: left;
+    background: #303030;
+}
+
+.consult .right-btn {
+    float: right;
+    width: 156px;
+    height: 60px;
+    background: rgb(253, 181, 34);
+    font-size: 24px;
+    font-family: PingFang-Heavy;
+    color: #FEFEFE;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 45px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.footer-top .consult-info {
+    height: 100px;
+    margin-top: 30px;
+}
+
+.consult-info .describe, .consult-info .remarks {
+    height: 100%;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #464646;
+}
+
+.consult-info .describe {
+    width: 463px;
+    float: left;
+}
+
+.consult-info .remarks {
+    float: right;
+    text-align: right;
+}
+
+.footer-top .identifier {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #464646;
+}
+
+.footer-bottom h2 {
+    font-size: 20px;
+    color: #464646;
+}
+
+.footer-bottom h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    background: #FCBC38;
+    margin-right: 9px;
+}
+
+.footer-bottom ul {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.footer-bottom ul li {
+    margin-right: 55px;
+    padding: 12px 0;
+    font-size:14px;
+    font-family:PingFang-Medium;
+    color: #464646;
+    font-weight:500;
+    cursor: pointer;
+}

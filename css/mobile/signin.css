@@ -1,0 +1,149 @@
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 195px;
+    z-index: -9;
+    background: linear-gradient(0deg, #FFCF6F, #FFB319);
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.summary-list .number {
+    font-size: 30px;
+    font-family: PingFang-Bold;
+}
+
+.summary-list .text {
+    margin-top: 21px;
+    font-size: 15px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+}
+
+.signin-calendar {
+    width: 92%;
+    height: 373px;
+    background: #fff;
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+.signin-btn {
+    width: 92%;
+    height: 50px;
+    margin: 38px auto 0;
+    font-size: 17px;
+    font-family: PingFang-Bold;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(0deg, #FFCA5E, #FFB319);
+    box-shadow: 0px -1px 0px 0px #EDEDF5;
+    opacity: 0.95;
+    border-radius: 49px;
+}
+
+.signin-calendar .date {
+    text-align: center;
+    padding-top: 36px;
+    font-size: 18px;
+    font-family: PingFang-Bold;
+}
+
+@keyframes leftTransform {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightTransform {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.signin-calendar .calendar {
+    margin-top: 29px;
+}
+
+
+.calendar .calendar-table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.calendar-table th.title {
+    font-size: 12px;
+    font-family: PingFang-Bold;
+    color: #8A857C;
+    padding-bottom: 20px;
+}
+
+.calendar-table td.blank {
+    font-size: 0;
+}
+
+.calendar-table td.day {
+    font-size: 14px;
+    font-family: PingFang-Bold;
+    color: #292621;
+    padding: 6px 0;
+}
+
+.calendar-table td.day span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.calendar-table td.day.signed-in span {
+    color: #fff;
+    background-color: #B0A99E;
+    border-radius: 50%;
+}
+
+.previous, .next {
+    display: inline-block;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+.previous {
+    margin-right: 25px;
+    border-top: 4px solid transparent;
+    border-right: 6px solid #FF4367;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.cur-date {
+    font-size: 18px;
+    font-family: PingFang-Bold;
+    color: #010101;
+    vertical-align: middle;
+}
+
+.next {
+    margin-left: 25px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid #FF4367;
+}

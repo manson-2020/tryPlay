@@ -1,0 +1,159 @@
+body {
+    background: #fff;
+}
+
+#root>main {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    transition: all 0.6s;
+}
+
+.login, .password-login, .register {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.password-login, .register {
+    display: none;
+}
+
+.main {
+    margin-top: 57pt;
+    padding: 0 10%;
+}
+
+.title a {
+    display: inline-block;
+    font-size: 16px;
+    color: #666;
+    font-family: PingFang-Bold;
+}
+
+.title a.selected {
+    font-size: 24px;
+    color: #333;
+}
+
+.title a:nth-child(2) {
+    margin-left: 16px;
+}
+
+.main .input {
+    margin-top: 50px;
+}
+
+.main .input input {
+    border: none;
+    width: auto;
+    height: 40px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.input label {
+    display: block;
+    height: 46pt;
+    border-bottom: 1px solid #EEEEEE;
+    line-height: 46pt;
+    margin-top: 20px;
+}
+
+.input .verif input {
+    width: 69%;
+}
+
+.password-login .input .verif input, .register .input .verif:last-child input {
+    width: 92%;
+}
+
+.main .input input::placeholder {
+    color: #999999;
+    font-size: 16px;
+    font-family: PingFang-Medium;
+}
+
+.verif .get-verif {
+    display: inline-block;
+    height: 28pt;
+    width: 30%;
+    color: #fff;
+    font-family: PingFang-Medium;
+    font-size: 12px;
+    text-align: center;
+    background: #ccc;
+    line-height: 28pt;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.verif .get-verif.allowed {
+    background-color: #666;
+}
+
+.verif .get-verif.ciphertext, .verif .get-verif.plaintext {
+    width: 17px;
+    height: 12px;
+    background-size: 17px 12px;
+    background-color: transparent;
+}
+
+.verif .get-verif.ciphertext {
+    background-image: url(/images/icon-ciphertext.png);
+}
+
+.verif .get-verif.plaintext {
+    background-image: url(/images/icon-Plaintext.png);
+}
+
+.main .pwd-login, .main .btn {
+    display: block;
+    padding: 40px 0 0;
+    text-align: center;
+    color: #999;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main .btn {
+    padding: 0;
+}
+
+.main .btn {
+    margin-top: 27px;
+    color: #FFFEFE;
+    height: 45px;
+    background: linear-gradient(-80deg, rgba(255, 99, 57, 1), rgba(255, 134, 36, 1));
+    border-radius: 10px;
+    line-height: 45px;
+    opacity: 0.5;
+}
+
+.main .btn.register-btn {
+    margin-top: 70px;
+}
+
+.main .btn.completed {
+    opacity: 1;
+}
+
+.bottom-bg {
+    margin-top: 6.5vh;
+    height: 40vh;
+    width: 100%;
+    background: url(/images/mb_login_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.password-login .skip {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password-login .main .pwd-login {
+    display: inline-block;
+    padding: 40px 0 10px;
+    font-size: 14px;
+    color: #666;
+}

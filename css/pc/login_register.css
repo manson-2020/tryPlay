@@ -1,0 +1,169 @@
+.container {
+    height: 100vh;
+    background: url(/images/lr_bg.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.login, .register {
+    width: 450px;
+    height: 570px;
+    background: #fff;
+    box-shadow: 0px 6px 25px 1px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.wrapper {
+    width: 355px;
+    margin: 0 auto;
+}
+
+.wrapper .title {
+    font-size: 30px;
+    color: #FCBC38FF;
+    padding: 23px 0;
+    text-align: center;
+}
+
+.wrapper .user-name, .wrapper .password, .wrapper .verification, .wrapper .password-again, .wrapper .verification {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.wrapper .agreement {
+    margin-bottom: 12px;
+}
+
+.iconAccount::before, .iconPassword::before, .iconCode::before {
+    font-size: 23px;
+    left: 30px;
+}
+
+.wrapper .user-name input, .wrapper .password input, .wrapper .verification input, .wrapper .password-again input {
+    height: 54px;
+    padding-left: 60px;
+    border: 1px solid #DCDCDCFF;
+}
+
+.wrapper .user-name input::placeholder, .wrapper .password input::placeholder, .wrapper .verification input::placeholder, .wrapper .password-again input::placeholder {
+    color: #989898FF;
+    font-size: 16px;
+    font-family: PingFang-Regular;
+    font-weight: 400;
+}
+
+.wrapper .verification input {
+    width: 178px;
+    font-size: 18px;
+}
+
+.wrapper .user-name input, .wrapper .password input, .wrapper .password-again input {
+    width: 295px;
+    font-size: 18px;
+}
+
+.verification .verification-container {
+    display: inline-block;
+    margin-left: 5px;
+    width: 110px;
+    height: 54px;
+    vertical-align: middle;
+}
+
+.wrapper .lr-btn {
+    height: 60px;
+    background: #FCBC38FF;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-family: PingFang-Bold;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+.wrapper .forget-pwd {
+    text-align: right;
+    color: #333333FF;
+}
+
+.wrapper .agreement input {
+    vertical-align: middle;
+}
+
+.wrapper .agreement label {
+    cursor: pointer;
+}
+
+.wrapper .agreement label span {
+    margin-left: 3px;
+}
+
+.wrapper .agreement label a {
+    text-decoration: underline;
+}
+
+.wrapper .agreement label span, .wrapper .agreement label a {
+    color: #000000FF;
+    font-size: 14px;
+    font-family: PingFang-Bold;
+}
+
+.wrapper .fast-login {
+    text-align: center;
+    color: #626262FF;
+}
+
+.wrapper .select-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.select-login .QQ-login, .select-login .weibo-login {
+    display: inline-block;
+    width: 65px;
+    vertical-align: middle;
+}
+
+.select-login::before, .select-login::after {
+    content: "";
+    display: inline-block;
+    width: 57px;
+    height: 1px;
+    background: #E0E0E0FF;
+    transform: translateY(-18px);
+}
+
+.select-login::before {
+    margin-right: 13px;
+}
+
+.select-login::after {
+    margin-left: 13px;
+}
+
+.QQ-login span, .weibo-login span {
+    color: #626262FF;
+    font-size: 14px;
+    line-height: 33px;
+}
+
+.wrapper .to {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.to span, .to a {
+    font-family: PingFang-Medium;
+    font-weight: 500;
+}
+
+.to a {
+    color: #FCBC38FF;
+    padding-left: 9px;
+}

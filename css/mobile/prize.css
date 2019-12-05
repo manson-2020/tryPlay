@@ -1,0 +1,216 @@
+body {
+    background-color: #EFEFEF;
+}
+
+@keyframes upTranslate {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.active {
+    border-bottom: 1.5px solid #FFAB00;
+    color: #FFAB00 !important;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.yellow-font {
+    color: #FFAB00 !important;
+}
+
+.virtual, .reality {
+    position: relative;
+}
+
+.virtual::after {
+    background-image: url(/images/virtual-bg.png);
+}
+
+.virtual::after, .reality::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0
+}
+
+.reality::after {
+    background-image: url(/images/reality-bg.png);
+}
+
+.money::before {
+    content: "￥";
+    font-size: 12px;
+    font-family: PingFang-Regular;
+    font-weight: 400;
+    color: #FFAB00;
+    margin-right: 3px;
+}
+
+.multiply::before {
+    content: "+";
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.search {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.search-input {
+    font-family: PingFang-Medium;
+    border: none;
+    background: transparent;
+    width: 81%;
+    height: 100%;
+    display: none;
+}
+
+.icon-search::before {
+    content: "\e60d";
+    font-family: iconfont;
+    margin: 0 7px;
+    vertical-align: middle;
+}
+
+.header-nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: PingFang-Medium;
+    font-weight: 400;
+}
+
+.nav-list {
+    height: 50px;
+    line-height: 50px;
+    width: 22.3%;
+    color: #333333;
+}
+
+.search {
+    width: 94.67%;
+    height: 36px;
+    background-color: #F8F8F8;
+    border-radius: 9px;
+    margin: 10px auto;
+}
+
+.search .search-text {
+    text-align: center;
+    line-height: 36px;
+    font-family: PingFang-Medium;
+    color: #515151;
+}
+
+.state-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 54px;
+}
+
+.partition-line {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 27px;
+    background-color: #CACACA;
+}
+
+.order-list {
+    width: 94.67%;
+    margin: 0 auto 10px;
+    border-radius: 11px;
+    animation: upTranslate 1s;
+}
+
+.order .order-number {
+    height: 44px;
+    font-size: 15px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #999999;
+    line-height: 44px;
+    border-bottom: 1px solid #EAEAEA;
+    padding-left: 15px;
+}
+
+.prize {
+    display: flex;
+    align-items: center;
+    height: 95px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.prize-img {
+    width: 71px;
+    height: 71px;
+    margin-left: 15px;
+    background-image: url(/images/order_img1.png);
+    background-size: cover;
+}
+
+.prize-info {
+    margin-left: 12px;
+}
+
+.prize-info .name, .prize-info .price {
+    font-size: 18px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #282828;
+}
+
+.prize-info .price {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.prize-num {
+    flex: 1;
+    text-align: right;
+    height: 50px;
+    margin-right: 30px;
+    color: #999999;
+    font-size: 15px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+}
+
+.state-li {
+    text-align: center;
+}
+
+.state-li .item {
+    font-size: 15px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #898989
+}
+
+.state-li .val {
+    font-size: 14px;
+    font-family: PingFang-SC-Bold;
+    font-weight: bold;
+    margin-top: 9px;
+}
+
+.state-li .time {
+    color: #4D4D4D;
+}
+
+.state-li .num {
+    font-size: 18px;
+}

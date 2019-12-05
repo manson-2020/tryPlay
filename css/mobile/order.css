@@ -1,0 +1,116 @@
+body {
+    background-color: #F6F6F6;
+}
+
+.nav {
+    display: flex;
+    height: 95px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 0px rgba(173, 173, 173, 0.4);
+}
+
+.nav .bar .icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(/images/all-icon.png);
+    background-size: 25px 25px;
+    background-position: center;
+}
+
+.nav .bar .icon.active {
+    width: 31px;
+    height: 31px;
+    background-color: #FFD817;
+    border-radius: 50%;
+}
+
+.nav .bar .word {
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: PingFang-Medium;
+    color: #727272;
+    font-weight: 500;
+}
+
+.order-list {
+    margin-top: 8px;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.order-list .details, .order-list .summary {
+    height: 72px;
+    margin: 0 33px;
+}
+
+.order-list .summary {
+    height: 58px;
+}
+
+.order-list .h2-title {
+    font-size: 17px;
+    padding-top: 18px;
+    font-family: PingFang-Bold;
+}
+
+.order-list .discribe {
+    margin-top: 15px;
+}
+
+.order-list .order-num {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2F2F2F;
+}
+
+.order-list .order-time {
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 20px;
+}
+
+.order-list .summary {
+    line-height: 58px;
+}
+
+.order-list .h3-title, .order-list .number {
+    display: inline-block;
+}
+
+.order-list .h3-title {
+    font-size: 15px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #333333
+}
+
+.order-list .number {
+    float: right;
+    font-size: 20px;
+    font-family: PingFang-Bold;
+}
+
+.recharge.order-list .h2-title, .recharge.order-list .number {
+    color: #FFAB00;
+}
+
+.cash-out.order-list .h2-title, .cash-out.order-list .number {
+    color: #FF4367;
+}
+
+.completed.order-list {
+    background-image: url(/images/corner-yellow.png);
+}
+
+.cancelled.order-list{
+    background-image: url(/images/corner-grey.png);
+}

@@ -1,0 +1,232 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+i {
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PingFang-ExtraLight;
+    src: url("../fonts/PingFang ExtraLight_0.ttf");
+}
+
+@font-face {
+    font-family: PingFang-Bold;
+    src: url("../fonts/PingFang Bold_0.ttf");
+}
+
+@font-face {
+    font-family: PingFang-Heavy;
+    src: url("../fonts/PingFang Heavy_0.ttf");
+}
+
+@font-face {
+    font-family: PingFang-Light;
+    src: url("../fonts/PingFang Light_0.ttf");
+}
+
+@font-face {
+    font-family: PingFang-Medium;
+    src: url("../fonts/PingFang Medium_0.ttf");
+}
+
+@font-face {
+    font-family: PingFang-Regular;
+    src: url("../fonts/PingFang Regular_0.ttf");
+}
+
+
+body {
+    font-family: PingFang-Regular;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 1260258 */
+    src: url('//at.alicdn.com/t/font_1260258_8rprnphg8nv.eot');
+    src: url('//at.alicdn.com/t/font_1260258_8rprnphg8nv.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1260258_8rprnphg8nv.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1260258_8rprnphg8nv.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1260258_8rprnphg8nv.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1260258_8rprnphg8nv.svg#iconfont') format('svg');
+  }
+
+@keyframes recyle {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes gc {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.iconTF::before {
+    content: '\e62a';
+    font-family: "iconfont";
+    color: #d81e06;
+    font-size: 22px;
+}
+
+.iconTF.right::before {
+    content: '\e629';
+    font-family: "iconfont";
+    color: #1296db;
+    font-size: 22px;
+}
+
+.iconCode::before {
+    content: '\e63d';
+    font-family: "iconfont";
+    color: #7f7f7f;
+    position: absolute;
+    font-size: 22px;
+    font-weight: 600;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.iconAccount::before {
+    content: '\e63f';
+    font-family: "iconfont";
+    color: #7f7f7f;
+    position: absolute;
+    font-size: 22px;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.iconPassword::before {
+    content: '\e627';
+    font-family: "iconfont";
+    color: #7f7f7f;
+    position: absolute;
+    font-size: 22px;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.iconCheck::before, .iconChecked::before {
+    font-family: "iconfont";
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.iconCheck::before {
+    content: '\e7e2';
+    color: #7f7f7f;
+}
+
+.iconChecked::before {
+    content: '\e61c';
+    color: rgb(252, 188, 56);
+}
+
+.icon-ub, .icon-ud {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 9px;
+    background: url(/images/ubi.png) no-repeat;
+}
+
+.icon-try, .icon-account {
+    position: absolute;
+    width: 28px;
+    height: 21px;
+    line-height: 21px;
+    background: url(/images/icon-try.png);
+    vertical-align: middle;
+    left: 47px;
+    top: 50%;
+    margin-top: -11px;
+}
+
+.icon-account {
+    width: 25px;
+    height: 25px;
+    margin-top: -13px;
+    background: url(/images/icon-account.png);
+}
+
+.icon-ud {
+    background: url(/images/udou.png) no-repeat;
+}

@@ -1,0 +1,164 @@
+.header {
+    position: absolute;
+    box-shadow: none;
+}
+
+.navRightA {
+    font-family: PingFang-Bold;
+    color: #fff;
+}
+
+.banner {
+    position: relative;
+    height: 980px;
+}
+
+.banner img {
+    min-width: 1200px;
+    position: absolute;
+    z-index: -999;
+}
+
+.banner .text {
+    position: absolute;
+    width: 1200px;
+    top: 350px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.banner .title {
+    font-size: 72px;
+    color: #161e6d;
+}
+
+.banner .describe {
+    margin-top: 60px;
+}
+
+.banner .describe p {
+    font-size: 30px;
+    color: #3a3a3a;
+    line-height: 48px;
+}
+
+.banner .open-btn {
+    display: inline-block;
+    width: 216px;
+    height: 56px;
+    background: linear-gradient(-4deg, #fcbc38FF, #ffab00FF);
+    border-radius: 28px;
+    font-size: 24px;
+    font-family: PingFang-Bold;
+    color: #FFF;
+    text-align: center;
+    line-height: 56px;
+    margin-top: 90px;
+    cursor: pointer;
+}
+
+.details table {
+    text-align: center;
+    margin: 80px auto 0;
+}
+
+.details .grey {
+    background: #F7F7F7FF;
+    width: 510px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #636363FF;
+    font-family: PingFang-Medium;
+}
+
+.details .purple {
+    background: #7F89FFFF;
+    width: 345px;
+}
+
+.details .dark-purple {
+    background: #5866FFFF;
+    width: 345px;
+}
+
+.details td.purple, .details td.dark-purple {
+    font-size: 24px;
+    font-family: PingFang-Bold;
+    color: #fff;
+}
+
+.details .blue {
+    background: #4976F9FF;
+    width: 1200px;
+}
+
+.details tr th, .details tr th.vip {
+    font-size: 26px;
+    font-family: PingFang-Bold;
+    height: 120px;
+    line-height: 120px;
+    font-weight: 500;
+    color: #FFFEFEFF;
+}
+
+.details tr td {
+    height: 120px;
+    line-height: 120px;
+}
+
+.details tr th.vip {
+    color: #000;
+}
+
+.details .blue td {
+    height: 75px;
+    line-height: 75px;
+    font-size: 18px;
+    font-family: PingFang-Bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-banner {
+    position: relative;
+    height: 550px;
+    margin-top: 130px;
+    background: url(/images/footer-banner.jpg) no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    margin-top: 0;
+}
+
+.footer-banner .text {
+    display: inline-block;
+    position: absolute;
+    height: 230px;
+    width: 355px;
+    right: 400px;
+    top: 173px;
+    color: #fff;
+    text-align: right;
+}
+
+.footer-banner .ad {
+    font-size: 58px;
+    font-family: PingFang-Medium;
+    line-height: 72px;
+}
+
+.footer-banner .open-btn {
+    display: inline-block;
+    width: 195px;
+    height: 51px;
+    border: 3px solid #fff;
+    font-size: 24px;
+    font-family: PingFang-Medium;
+    line-height: 51px;
+    text-align: center;
+    margin-top: 48px;
+    cursor: pointer;
+}

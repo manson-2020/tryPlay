@@ -1,0 +1,309 @@
+body {
+    background: #EFEFEF;
+}
+
+.banner {
+    height: 626px;
+    background: url(/images/newbie_banner.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .dynamic {
+    position: absolute;
+    width: 725px;
+    height: 38px;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 6px;
+    line-height: 38px;
+    white-space: nowrap;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.21);
+    color: #fff;
+}
+
+.banner .dynamic span {
+    padding-left: 9px;
+}
+
+.banner .dynamic .msg {
+    font-size: 14px;
+}
+
+.banner .dynamic .title {
+    font-family: PingFang-Medium;
+}
+
+.introduction-task, .newbie-task, .advertising .re-try-play {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.introduction-task, .newbie-task {
+    text-align: center;
+}
+
+.introduction-task {
+    margin-top: 93px;
+}
+
+.newbie-task {
+    margin-top: 50px;
+}
+
+.introduction-task .title, .newbie-task .title {
+    display: inline-block;
+    font-size: 30px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #010101;
+    padding-bottom: 15px;
+    border-bottom: #FED100 1px solid;
+}
+
+.introduction-task .task-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 88px;
+}
+
+.introduction-task .task-step .step {
+    width: 205px;
+    height: 292px;
+    background: #FFF;
+    border-radius: 4px;
+}
+
+.introduction-task .task-step .symbol::after {
+    content: "\e912";
+    font-family: "iconfont";
+    color: #FDA01A;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 34px;
+}
+
+.introduction-task .task-step .result {
+    width: 180px;
+    height: 256px;
+    background: url(/images/redbag_bg.png);
+}
+
+.introduction-task .step .task-target {
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.introduction-task .step .reward, .introduction-task .step .progress {
+    font-weight: 400;
+}
+
+.introduction-task .step .reward, .introduction-task .step .forward-btn {
+    margin-top: 14px;
+}
+
+.introduction-task .step .reward .number {
+    color: #FA6400;
+}
+
+.introduction-task .step .progress {
+    margin-top: 6px;
+}
+
+.introduction-task .step .forward-btn {
+    display: inline-block;
+    width: 195px;
+    height: 45px;
+    background: #FDA01A;
+    border-radius: 6px;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 2em;
+    text-indent: 2em
+}
+
+.introduction-task .result .final {
+    width: 107px;
+    height: 35px;
+    margin: 0 auto;
+    transform: translateY(129px);
+}
+
+.introduction-task .result .final .important, .introduction-task .result .final .conventional {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.introduction-task .result .final .important {
+    font-size: 39px;
+}
+
+.introduction-task .result .final .conventional {
+    font-size: 22px;
+}
+
+.introduction-task .result .conditions {
+    display: inline-block;
+    font-size: 14px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #030100;
+    transform: translateY(173px);
+}
+
+.newbie-task .task-step {
+    margin-top: 40px;
+    height: 535px;
+    background: #fff;
+    border-radius: 6px;
+    padding-top: 36px;
+}
+
+.newbie-task .task {
+    width: 1094px;
+    height: 94px;
+    background: #FFF8ED;
+    border-radius: 4px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newbie-task .task-cont {
+    margin-left: 50px;
+}
+
+.newbie-task .task-execute {
+    margin-right: 50px;
+}
+
+.newbie-task .task-cont .task-number {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    background: #fff;
+    border: 1px solid #7D7D7D;
+    border-radius: 50%;
+    font-size: 24px;
+    font-family: PingFang-Medium;
+}
+
+.orange-bg {
+    color: #FF9933;
+}
+
+.newbie-task .task-cont .task-target {
+    font-size: 18px;
+    font-family: PingFang-Medium;
+    color: #030100;
+    margin-left: 53px;
+}
+
+.newbie-task .task-execute .progress {
+    font-size: 18px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+}
+
+.newbie-task .task-execute .forward-btn {
+    display: inline-block;
+    margin-top: 15px;
+    width: 157px;
+    height: 35px;
+    line-height: 35px;
+    background: #FF9933;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: PingFang-Medium;
+    color: #fff;
+    letter-spacing: 1em;
+    text-indent: 1em;
+}
+
+.advertising .recommend {
+    position: relative;
+    margin-top: 80px;
+    height: 386px;
+    background: #fff;
+    box-shadow: 0 0 15px 12px #ccc;
+    text-align: center;
+}
+
+.advertising .recommend::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #fff;
+    border-right: 30px solid transparent;
+    border-left: 20px solid transparent;
+    bottom: -12px;
+}
+
+.advertising .recommend .title {
+    font-size: 50px;
+    font-family: PingFang-Medium;
+    color: #FDA01A;
+    padding-top: 47px;
+    padding-bottom: 20px;
+}
+
+.advertising .recommend .introduce {
+    font-size: 28px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #FDA01A;
+    padding-top: 32px;
+}
+
+.advertising .recommend .more {
+    font-size: 24px;
+    font-family: PingFang-Medium;
+    padding-top: 86px;
+}
+
+.advertising .re-try-play {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.advertising .re-try-play .item {
+    width: 185px;
+    height: 196px;
+    background: #fff;
+}
+
+.advertising .re-try-play .avatar {
+    width: 61px;
+    height: 51px;
+    margin: 27px auto 0;
+    background: url(/images/item_bg.png);
+}
+
+.advertising .re-try-play .title {
+    font-size: 20px;
+    font-family: PingFang-Medium;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.advertising .re-try-play .introduce {
+    font-weight: 400;
+    color: #6F6F6F;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 15px;
+    padding: 0 10px;
+    font-size: 15px;
+    overflow: hidden;
+}

@@ -1,0 +1,305 @@
+body {
+    background: #f0f2f5;
+}
+
+.header {
+    background: #fff;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .content-left, .content .content-right {
+    display: inline-block;
+}
+
+.content .content-left {
+    background: #fff;
+    height: 1135px;
+}
+
+.content .content-left {
+    width: 288px;
+}
+
+.content .content-right {
+    width: 880px;
+}
+
+.content-left .user-info {
+    height: 193px;
+    border-bottom: rgba(230, 230, 230, 0.3) 1px solid;
+}
+
+.content-left .account-info {
+    height: calc(390px - 193px);
+}
+
+.content-left .sign-in {
+    height: 80px;
+}
+
+.content-left .category {
+    margin-top: 66px;
+    height: 600px;
+}
+
+.user-info .avatar {
+    box-sizing: content-box;
+    width: 81px;
+    height: 81px;
+    margin: 0 auto;
+    padding-top: 26px;
+}
+
+.user-info .name, .user-info .id {
+    text-align: center;
+    padding-top: 18px;
+}
+
+.user-info .name {
+    color: #FFAB00;
+    font-size: 18px;
+}
+
+.user-info .id {
+    color: #626262;
+}
+
+.account-info li {
+    padding: 26px 40px 0;
+    color: #3A3A3A;
+}
+
+.account-info li>span:last-child {
+    float: right;
+    color: #E40000;
+}
+
+.account-info .centage {
+    padding-right: 7px;
+    padding-top: 18px;
+    line-height: 20px;
+}
+
+.account-info .centage>span:first-child {
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    background: #E6E6E6;
+    border-radius: 5px;
+    line-height: 20px;
+}
+
+.centage .ur {
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    background: #FFAB00;
+    font-size: 14px;
+    color: #fff;
+    vertical-align: top;
+}
+
+.account-info .centage span:last-child {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sign-in>p {
+    background: url(/images/signin.png) no-repeat;
+    height: 80px;
+    width: 252px;
+    margin: 0 auto;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sign-in>p>i {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: url(/images/calendar.png);
+    vertical-align: middle;
+}
+
+.sign-in>p>span {
+    font-size: 24px;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+
+.category li {
+    height: 20px;
+    line-height: 20px;
+    margin: 27px 0;
+    color: #1D1D1D;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.category li:last-child {
+    margin: 0;
+}
+
+.category .title {
+    height: 56px;
+    line-height: 56px;
+    font-family: PingFang-Bold;
+    font-weight: bold;
+    position: relative;
+}
+
+.category .title.active {
+    background: url(/images/tiyanbg.png) no-repeat;
+}
+
+.content-right .banner {
+    height: 440px;
+    background: url(/images/vip_banner.png);
+    margin-top: 22px;
+}
+
+.content-right .total {
+    height: 70px;
+    background: #fff;
+    margin-top: 22px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 70px;
+    color: #3A3A3A;
+}
+
+.total-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.total-content li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 222px;
+    box-shadow: 0px 8px 13px 0px rgba(174, 255, 226, 0.24);
+    background-image: url(/images/total-bg.png);
+    background-position-x: -11px;
+}
+
+.total-content .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 132px;
+}
+
+.total-content .cumulative {
+    font-size: 18px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: rgba(58, 58, 58, 1);
+}
+
+.total-content .number {
+    font-size: 24px;
+    font-family: PingFang-Bold;
+    font-weight: bold;
+    color: #FFAB00;
+}
+
+.total-content .draw {
+    font-weight: 400;
+    color: #9B9B9B;
+}
+
+.content-right .J_gamesTbl {
+    margin-top: 55px;
+    border: solid 1px #E6E6E6;
+}
+
+.J_gamesTbl .table-tab {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background: #fff;
+}
+
+.table-tab .tab-a {
+    font-size: 18px;
+    font-family: PingFang-Bold;
+    color: #3A3A3A;
+}
+
+.table-tab .tab-a.select {
+    color: #FFAB00;
+    border-bottom: #FFAB00 2px solid;
+    height: 70px;
+    line-height: 70px;
+}
+
+.J_gamesTbl .personal-tbl {
+    height: 80px;
+    background: rgb(244, 245, 249);
+    width: 100%;
+    text-align: center;
+}
+
+.personal-tbl thead tr {
+    height: 68px;
+    border-bottom: solid 1px #E6E6E6;
+}
+
+.personal-tbl th {
+    color: #3A3A3A;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.personal-tbl tbody tr {
+    border-bottom: solid 1px #E6E6E6;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.content-right .bottom-btn-box {
+    position: relative;
+    background: rgb(244, 245, 249);
+}
+
+.bottom-btn-box .left-btn {
+    height: 50px;
+    padding-left: 50px;
+}
+
+.bottom-btn-box .left-btn .s-all {
+    font-size: 14px;
+    color: #6B6B6BFF;
+    line-height: 50px;
+}
+
+.bottom-btn-box .left-btn .a-del {
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    background: #636363FF;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFEFEFF;
+    text-align: center;
+    margin-left: 50px;
+}

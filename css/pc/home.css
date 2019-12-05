@@ -1,0 +1,390 @@
+* {
+    box-sizing: content-box;
+}
+
+.header {
+    position: fixed;
+    box-shadow: none;
+}
+
+.navlLeft {
+    color: #fff;
+}
+
+.navRightA {
+    font-family: PingFang-Medium;
+    color: #fff;
+}
+
+.bgSec1 {
+    background-image: url(/images/homeBg.png);
+    height: calc(100vh + 80px);
+    position: fixed;
+    z-index: 9;
+    top: -80px;
+    background-repeat: no-repeat;
+    background-position: center 25px;
+    background-size: cover;
+    width: 100%
+}
+
+.mainContent {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative
+}
+
+p.login {
+    margin-bottom: 0
+}
+
+.loginWrapper, .registerWapper {
+    float: right;
+    position: relative;
+    top: 35%;
+    right: 0;
+    width: 361px;
+    padding: 32px 32px 0 32px;
+    background-color: #fff;
+    border: 1px solid #ededed;
+    border-radius: 9px;
+}
+
+.loginTitle {
+    font-family: PingFang-Bold;
+    color: rgb(252, 188, 56);
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 35px
+}
+
+.loginIcon {
+    display: inline-block;
+    width: 6px;
+    height: 24px;
+    background: url(/images/denglubiaozhi.png) no-repeat;
+    vertical-align: bottom;
+    padding-right: 6px
+}
+
+.elInput {
+    width: 360px;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative;
+}
+
+.elInputInner {
+    height: 50px;
+    width: 100%;
+    border: #e1e1e1 1px solid;
+    border-radius: 6px;
+    line-height: 1;
+    outline: none;
+    padding-left: 50px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    font-size: inherit;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-image: none;
+    cursor: text;
+}
+
+.elInputInner::placeholder {
+    font-weight: 400;
+    color: #666666FF;
+    font-family: PingFang-Medium;
+}
+
+.vc {
+    width: 100%
+}
+
+.vcp {
+    margin-bottom: 0;
+}
+
+.vcp span {
+    display: inline-block;
+    width: 30%;
+    height: 50px;
+    vertical-align: top;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 5%;
+}
+
+.vcp span.get-tel_v {
+    width: 25%;
+    border: #e1e1e1 1px solid;
+    box-sizing: border-box;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.vcp .iconTF {
+    margin-left: 3%;
+    display: none;
+    width: 10%;
+    color: #888;
+    font-size: 17px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.vcp .v_code, .vcp .tel_v {
+    display: inline-block;
+    position: relative;
+}
+
+.vcp .v_code {
+    width: 50%;
+}
+
+.vcp .tel_v {
+    width: 70%;
+}
+
+.account {
+    height: 18px;
+    margin: 18px 0;
+}
+
+.account span, .account .agreements {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333333FF;
+    cursor: pointer;
+    line-height: 18px;
+    font-family: PingFang-Medium;
+}
+
+.account .agreements {
+    text-decoration: underline;
+}
+
+.account .remenber-name {
+    float: left;
+    padding-left: 27px;
+}
+
+.account .forget-password {
+    float: right;
+}
+
+.account span.agree {
+    float: none;
+    padding-left: 27px;
+}
+
+.login button {
+    display: block;
+    font-family: PingFang-Bold;
+    width: 360px;
+    height: 44px;
+    font-size: 20px;
+    border: 0 none;
+    background-color: rgb(252, 188, 56);
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.register {
+    text-align: center;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    margin-top: 18px;
+}
+
+.register a {
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #FCBC38FF;
+}
+
+.decor-section {
+    margin-top: calc(100vh - 80px);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(178, 63, 132);
+    background: url(/images/decor-section.png) no-repeat;
+    background-size: 100vw 100vh;
+    z-index: 12;
+}
+
+.decor-section .bottomarrow {
+    position: absolute;
+    top: -54px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 280px;
+    height: 55px;
+    background: url(/images/bottomarrow.png) no-repeat 50%;
+    background-size: 100%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.bottomarrow i {
+    display: inline-block;
+    width: 33px;
+    height: 18px;
+    background: url(/images/bottom.png) no-repeat;
+    animation: recyle 1s linear infinite;
+    animation-direction: alternate;
+}
+
+.img-container {
+    width: 946px;
+    height: 550px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url(/images/loginMacNew-min.png);
+    background-size: cover;
+}
+
+.service-intro-section {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.service-intro-section main {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.service-intro-section h2 {
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.service-intro-section ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-intro-section .platList {
+    display: inline-block;
+    width: 282px;
+    height: 200px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 36px 64px 0 #ebebeb;
+}
+
+.creator-intro-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(/images/join.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 99;
+}
+
+.creator-intro-section main {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.creator-intro-section .content {
+    position: absolute;
+    width: 570px;
+    height: 440px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.creator-intro-section .footer-list {
+    position: absolute;
+    bottom: 50px;
+}
+
+.creator-intro-section .footer-list li {
+    display: inline-block;
+}
+
+.creator-intro-section .footer-list li a, .creator-intro-section .footer-list li span {
+    font-size: 14px;
+    font-family: PingFang-Medium;
+    color: #FFF;
+}
+
+.creator-intro-section .footer-list li span {
+    padding: 0 5px;
+}
+
+.creator-intro-section .content h1 {
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 56px;
+    font-family: PingFang-Bold;
+    font-weight: bold;
+}
+
+.creator-intro-section .content>p {
+    height: 28px;
+    line-height: 28px;
+    font-size: 18px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #fff;
+}
+
+.creator-intro-section .option {
+    height: 44px;
+    margin: 32px 0;
+    line-height: 44px;
+}
+
+.creator-intro-section .option span {
+    display: inline-block;
+    padding: 0 12px;
+    height: 44px;
+    width: 125px;
+    margin: 32px auto;
+    line-height: 44px;
+    border-radius: 2px;
+    text-align: center;
+    border: 1px solid rgb(252, 188, 56);
+    box-shadow: 0 4px 4px 0 rgba(255, 235, 0, .3);
+    color: #fff;
+    cursor: pointer;
+}
+
+.creator-intro-section .option span:first-child {
+    background-color: rgb(252, 188, 56);
+}
+
+.creator-intro-section .option span:last-child {
+    margin-left: 20px;
+    box-shadow: none;
+}

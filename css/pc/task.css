@@ -1,0 +1,313 @@
+.slider {
+    position: relative;
+}
+
+.slider .imgs {
+    font-size: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slider .imgs li {
+    display: none;
+}
+
+.slider .dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 8px;
+    bottom: 30px;
+    line-height: 0;
+}
+
+.slider .dots li {
+    height: 100%;
+    width: 20px;
+    background: rgb(255, 166, 142);
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.slider .dots li.active {
+    width: 36px;
+    background: #ccc;
+}
+
+.slider .vip-info {
+    position: absolute;
+    top: 22%;
+    right: 19%;
+    width: 324px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.vip-info .user-info {
+    height: 220px;
+    border-bottom: rgba(230, 230, 230, 0.6) 1px solid;
+}
+
+.user-info .avatar {
+    box-sizing: content-box;
+    width: 81px;
+    height: 81px;
+    margin: 0 auto;
+    padding-top: 57px;
+}
+
+.user-info .name, .user-info .id {
+    padding-top: 15px;
+}
+
+.user-info .name {
+    color: #FFAB00;
+    font-size: 20px;
+    font-family: PingFang-Bold;
+}
+
+.user-info .id {
+    color: #626262;
+    font-family: PingFang-Medium;
+}
+
+.vip-info .account-info {
+    padding: 7px 0;
+}
+
+.account-info li {
+    padding: 26px 58px 0;
+    color: #3A3A3A;
+}
+
+.account-info li>span {
+    font-family: PingFang-Medium;
+}
+
+.account-info li>span:last-child {
+    float: right;
+    color: #E40000;
+    cursor: pointer;
+}
+
+.vip-info .sign-in {
+    width: 116px;
+    height: 45px;
+    line-height: 45px;
+    background: #FCBC38;
+    border-radius: 22px;
+    font-size: 18px;
+    margin: 27px auto;
+    color: #FFFEFE;
+    cursor: pointer;
+}
+
+.sign-in span {
+    font-family: PingFang-Medium;
+}
+
+.icon-signIn::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url(/images/icon-signIn.png);
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.recommend, .trial, .business {
+    width: 1200px;
+    margin: 40px auto;
+}
+
+.recommend .re-game-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.re-game-content .re-game {
+    position: relative;
+    cursor: pointer;
+}
+
+.re-game-content .re-game::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: url(/images/recommend.png);
+}
+
+.re-game-content .re-game:hover .title {
+    color: #FCBC38FF;
+}
+
+.re-game-content .re-game:hover .title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background: #FCBC38FF;
+    border-radius: 1px;
+    top: 33px;
+    left: 22px;
+}
+
+.re-game-content .game-img {
+    width: 580px;
+    height: 315px;
+    background: #000;
+}
+
+.re-game-content .text {
+    position: relative;
+    height: 88px;
+    background: rgba(246, 247, 247, 1);
+    box-shadow: 0px 2px 20px 0px rgba(28, 28, 28, 0.14);
+}
+
+.re-game-content .title {
+    font-size: 18px;
+    font-family: PingFang-Bold;
+    color: #1E1E1E;
+    padding: 25px 0 11px 75px;
+    transition: color 0.3s;
+}
+
+.re-game-content .describe {
+    padding: 0 0 11px 75px;
+    color: #8F8F8F;
+}
+
+.recommend .experience {
+    margin-top: 40px;
+}
+
+.trial .tab, .business .tab {
+    height: 65px;
+    box-shadow: 1px 4px 14px 0px rgba(28, 28, 28, 0.08);
+}
+
+.trial .title, .business .title {
+    float: left;
+    font-size: 24px;
+    font-family: PingFang-Medium;
+    color: #454545FF;
+    line-height: 65px;
+    margin-left: 35px;
+}
+
+.trial .tab-bar {
+    float: right;
+    display: flex;
+    width: 255px;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.trial .tab-bar li {
+    height: 65px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #818181FF;
+    line-height: 65px;
+    cursor: pointer;
+}
+
+.trial .tab-bar li.active {
+    color: #FCBC38FF;
+    font-size: 18px;
+    font-family: PingFang-Bold;
+    border-bottom: 1px solid #FCBC38FF;
+}
+
+.trial .trial-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.trial-content li {
+    margin-top: 40px;
+    cursor: pointer;
+    width: 380px;
+    transition: transform 0.5s;
+}
+
+.trial-content li:hover{
+    transform: scale(1.1,1.1);
+}
+
+.trial-content .game-image {
+    height: 270px;
+    background: #000;
+}
+
+.trial-content .text {
+    height: 130px;
+    box-shadow: 1px 4px 14px 0px rgba(28, 28, 28, 0.08);
+    text-align: center;
+}
+
+.trial-content .game-title {
+    font-size: 20px;
+    color: #454545FF;
+    padding-top: 40px;
+}
+
+.trial-content .game-reward {
+    padding-top: 23px;
+}
+
+.game-reward .type {
+    color: #7E7E7EFF;
+    font-family: PingFang-Medium;
+}
+
+.game-reward .reward {
+    color: #FCBC38FF;
+    font-size: 22px;
+    font-family: PingFang-Bold;
+}
+
+.game-reward .icon-ub {
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.trial .more {
+    margin: 44px auto 20px;
+    display: block;
+    width: 130px;
+    height: 40px;
+    background: #E6E6E6FF;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #323232FF;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.business .business-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px; 
+}
+
+.business .business-ul li {
+    width: 188px;
+    height: 100px;
+    border: 1px solid #E6E6E6FF;
+    margin-bottom: 15px;
+    cursor: pointer;
+}

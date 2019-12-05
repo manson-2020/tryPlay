@@ -1,0 +1,54 @@
+.header {
+    box-shadow: 0px 1px 7px 0px rgba(49, 49, 49, 0.08);
+    height: 138px;
+    background-color: hsla(0, 0%, 100%, 0);
+    z-index: 10;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.headerNav {
+    width: 1200px;
+    height: 80px;
+    min-width: 1140px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.navlLeft {
+    float: left;
+    font-size: 44PX;
+    color: #3A3A3A; 
+    line-height: 80px;
+}
+
+.navRight {
+    height: 80px;
+    float: right;
+    line-height: 80px;
+}
+
+.navRightA {
+    padding: 0 20px;
+    color: #000;
+}
+
+.navRightA.active {
+    color: #FCBC38;
+}
+
+.leftImg {
+    margin: 24px auto;
+    height: 32px
+}
+
+.headerMain {
+    padding-top: 80px;
+    min-height: calc(100% - 169px)
+}

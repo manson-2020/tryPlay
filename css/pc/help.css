@@ -1,0 +1,123 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background: url(/images/help_banner.png) no-repeat;
+    background-size: 100% 100%; 
+}
+
+.search, .list {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.banner .text {
+    position: absolute;
+    width: 252px;
+    height: 76px;
+    top: 33%;
+    left: 33%;
+}
+
+.banner .title {
+    font-size: 30px;
+    font-family: PingFang-Bold;
+    color: #fff;
+}
+
+.banner .describe {
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+    padding: 30px 0;
+}
+
+.search .search-content {
+    height: 33px;
+    width: 570px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    margin: 60px auto;
+    font-family: PingFang-Medium;
+}
+
+.search .search-input {
+    width: 470px;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.search-input::placeholder{
+    color: #C2C2C2;
+    font-family: PingFang-Medium;
+}
+
+.search .search-btn {
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+    vertical-align: top;
+    text-align: center;
+    color: #fff;
+    font-family: PingFang-Medium;
+    line-height: 33px;
+    background: #FCBC38;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.list ul {
+    width: 580px;
+}
+
+.list ul li {
+    height: 85px;
+    border-bottom: 1px #E2E2E2 solid;
+    line-height: 115px;
+    font-size: 20px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #252525;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 0 46px 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list ul .list-title {
+    margin: 0;
+    font-size: 30px;
+    color: #000;
+    border-bottom: 2px solid #E2E2E2;
+    line-height: 90px;
+    padding-left: 30px;
+}
+
+.list .list-title::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.list .left-list .list-title::before {
+    background: url(/images/icon-skill.png)
+}
+
+.list .right-list .list-title::before {
+    background: url(/images/icon-course.png)
+}

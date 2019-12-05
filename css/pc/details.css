@@ -1,0 +1,323 @@
+body {
+    background: #F4F2F2;
+    letter-spacing: 1px;
+}
+
+.banner {
+    height: 530px;
+    background: url(/images/details_banner.png) no-repeat center 0;
+}
+
+.tryplay-step {
+    width: 1200px;
+    height: 80px;
+    margin: 5px auto 0;
+    cursor: pointer;
+    background: url(/images/try_play_step.png) no-repeat center;
+}
+
+.main-body {
+    width: 1200px;
+    margin: 36px auto 0;
+}
+
+.main-body .list {
+    width: 390px;
+    float: left;
+    background: #fff;
+}
+
+.main-body .details {
+    width: 790px;
+    float: right;
+}
+
+.main-body .list .ranking-list {
+    height: 327px;
+}
+
+.main-body .list .foreshow-list {
+    height: 422px;
+}
+
+.main-body .details .requirement {
+    position: relative;
+    height: 330px;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 9px 0px rgba(255, 219, 168, 0.36);
+}
+
+.main-body .details .describe {
+    height: 405px;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0px 7px 9px 0px rgba(255, 219, 168, 0.36);
+}
+
+h2.title {
+    font-size: 18px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #010101;
+    width: 369px;
+    height: 56px;
+    margin-top: 5px;
+    background: url(/images/tiyanbg.png) no-repeat;
+    background-size: cover;
+    margin-left: 9px;
+    line-height: 63px;
+}
+
+h2.title::before {
+    content: "";
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin: 0 11px 0 27px;
+    vertical-align: middle;
+}
+
+.ranking-list h2.title::before {
+    background: url(/images/icon-rank.png) no-repeat center;
+}
+
+.foreshow-list h2.title::before {
+    background: url(/images/icon-laba.png) no-repeat center;
+}
+
+.rank-table {
+    text-align: center;
+    margin: 32px auto 0;
+}
+
+.rank-table thead th {
+    font-weight: 400;
+    padding-bottom: 18px;
+    font-size: 15px;
+}
+
+.rank-table thead th:first-child {
+    width: 33px;
+}
+
+.rank-table thead th:nth-child(2) {
+    width: 213px;
+}
+
+.rank-table thead th:last-child {
+    width: 70px;
+}
+
+.rank-table tbody td {
+    font-weight: 400;
+    font-size: 14px;
+    height: 39px;
+    color: #636363;
+}
+
+.rank-table .first, .rank-table .second, .rank-table .third {
+    background-size: 23px 27px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.rank-table .first {
+    background-image: url(/images/icon-first.png);
+}
+
+.rank-table .second {
+    background-image: url(/images/icon-second.png);
+}
+
+.rank-table .third {
+    background-image: url(/images/icon-third.png);
+}
+
+.foreshow-list .time {
+    width: 300px;
+    margin: 30px auto 0;
+}
+
+.foreshow-list .time a {
+    display: inline-block;
+    font-weight: 400;
+    color: #000;
+    height: 26px;
+    width: 132px;
+    text-align: center;
+}
+
+.foreshow-list .time a b {
+    display: inline-block;
+    width: 1em;
+}
+
+.foreshow-list .today {
+    float: left;
+}
+
+.foreshow-list a.active{
+    border-bottom: #FDA01A solid 1px;
+}
+
+.foreshow-list .tomorrow {
+    float: right;
+}
+
+.foreshow-list .foreshow-table {
+    width: 350px;
+    margin: 45px auto 0;
+}
+
+.foreshow-table tr td:last-child {
+    text-align: right;
+}
+
+.foreshow-table tr td:nth-child(2) {
+    color: #FDA01A;
+}
+
+.foreshow-table tr td:nth-child(2)::before {
+    content: "$";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: #fff;
+    text-align: center;
+    line-height: 19px;
+    border-radius: 50%;
+    background: #FDA01A;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.foreshow-table td {
+    font-weight: 400;
+    font-size: 14px;
+    color: #636363;
+    padding-bottom: 45px;
+}
+
+.requirement .title {
+    display: inline-block;
+    font-size: 18px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    color: #000;
+    margin: 27px 0 0 20px;
+    height: 33px;
+    width: 105px;
+    border-bottom: #FDA01A 1px solid;
+}
+
+.requirement .requirement-ul {
+    margin-left: 21px;
+    margin-top: 35px;
+}
+
+.requirement-ul .requirement-li {
+    margin-bottom: 25px;
+    color: #242424;
+}
+
+.requirement-li::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #FDA01A;
+    border-radius: 50%;
+    margin-right: 9px;
+    vertical-align: middle;
+}
+
+.requirement-li .text {
+    font-size: 14px;
+}
+
+.requirement .position-countdown {
+    position: absolute;
+    width: 285px;
+    right: 0;
+    top: 93px;
+}
+
+.position-countdown .text {
+    text-align: center;
+    font-size: 14px;
+}
+
+.position-countdown .time {
+    height: 27px;
+    line-height: 27px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #9F9F9F;
+    text-align: center;
+}
+
+.position-countdown .time .number {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    color: #fff;
+    background: rgb(95, 97, 114);
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: PingFang-Medium;
+    margin-left: 3px;
+}
+
+.position-countdown .time .unit {
+    padding: 0 8px;
+}
+
+.describe .tab .bar {
+    display: inline-block;
+    height: 62px;
+    width: 105px;
+    text-align: center;
+    font-size: 18px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+    line-height: 62px;
+    margin: 0 40px 0 27px;
+    cursor: pointer;
+}
+
+.tab .bar.active {
+    border-bottom: #FDA01A solid 1px;
+    color: #FDA01A;
+}
+
+.describe .content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.content .game-describe{
+    width: 385px;
+    margin-left: 20px;
+}
+
+.game-describe .paragraph{
+    height: 128px;
+    font-size:14px;
+    color: #242424;
+    line-height:22px;
+}
+
+.game-describe .enter-btn{
+    display: inline-block;
+    width: 183px;
+    height: 42px;
+    background: url(/images/enter-game.png);
+    margin-top: 33px;
+}
+
+.content .image{
+    margin-right: 45px;
+}
+

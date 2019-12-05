@@ -1,0 +1,304 @@
+.banner, .summary {
+    background-size: cover;
+}
+
+.banner {
+    height: 400px;
+    background: url(/images/signin_banner.png) no-repeat center;
+}
+
+.summary {
+    margin-top: 20px;
+    height: 130px;
+    background: url(/images/summary_bg.png) no-repeat center;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.summary .tab {
+    display: flex;
+    justify-content: space-around;
+    height: 130px;
+    line-height: 118px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.summary .partition-line {
+    width: 1px;
+    height: 28px;
+    background: #fff;
+    margin-top: 59px;
+    transform: translateY(-50%);
+    opacity: 0.46;
+}
+
+.summary span {
+    font-family: PingFang-Bold;
+}
+
+.sign-in-award .content:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in-award .clock {
+    width: 757px;
+    height: 670px;
+    background: url(/images/calendar_bg.png);
+    text-align: center;
+}
+
+.sign-in-award .award {
+    width: 400px;
+    height: 665px;
+    background: url(/images/award_bg.png)
+}
+
+.sign-in-award .sign-info {
+    height: 812px;
+    width: 100%;
+    background: url(/images/sign-info_bg.png) no-repeat center;
+}
+
+.everyday .title {
+    width: 300px;
+    height: 60px;
+    background: url(/images/everyday_sign_bg.png) no-repeat center;
+    background-size: cover;
+    margin: 52px auto 0;
+    line-height: 45px;
+    font-size: 27px;
+    color: #fff;
+    letter-spacing: 0.3em;
+}
+
+.everyday .cur-date {
+    display: inline-block;
+    height: 18px;
+    font-size: 20px;
+    color: #FFAB00FF;
+    font-family: PingFang-Bold;
+    line-height: 18px;
+    margin-top: 42px;
+}
+
+.previous, .next {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+}
+
+.previous {
+    background: url(/images/previous_icon.png);
+    margin-right: 40px;
+}
+
+.next {
+    background: url(/images/next_icon.png);
+    margin-left: 40px;
+}
+
+.clock .calendar {
+    margin-top: 40px;
+    height: 440px;
+}
+
+#calendar {
+    margin: 0 auto;
+}
+
+#calendar thead tr {
+    line-height: 120px;
+}
+
+#calendar td, #calendar th {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    margin: 7px 27px;
+    line-height: 36px;
+}
+
+#calendar .title {
+    font-size: 20px;
+    font-family: PingFang-Medium;
+    color: #B3B3B3FF;
+}
+
+#calendar .blank {
+    font-size: 0;
+    height: 0;
+}
+
+#calendar .today {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 3px 1px 3px #ccc;
+}
+
+#calendar .unsigned, #calendar .signed-in {
+    font-size: 20px;
+    font-family: PingFang-Medium;
+}
+
+#calendar .signed-in {
+    color: #fff;
+    background: url(/images/sign_calendar_bg.png);
+}
+
+#calendar .unsigned {
+    color: #333333FF;
+}
+
+.award .si-btn {
+    width: 310px;
+    height: 235px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    border-image: url(/images/border_line.png) 10 10 round;
+}
+
+.si-btn .date-title {
+    color: #FFAB00FF;
+    font-size: 28px;
+    margin-top: 72px;
+}
+
+.si-btn .sign-btn {
+    display: inline-block;
+    width: 142px;
+    height: 142px;
+    background: url(/images/sign-btn-bg.png);
+    line-height: 142px;
+    font-size: 21px;
+    font-family: PingFang-Bold;
+    color: #FEFEFEFF;
+    margin-top: 32px;
+}
+
+.award .award-ul {
+    width: 276px;
+    margin: 53px auto 0;
+}
+
+.award-ul .award-li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+
+.award-li .award-tel, .award-li .award-type, .award-li .award-amount {
+    font-size: 18px;
+}
+
+.award-li .award-tel, .award-li .award-type {
+    font-family: PingFang-Medium;
+    color: #181818FF;
+}
+
+.award-li .award-amount {
+    font-family: PingFang-Bold;
+    color: #FFAB00FF;
+}
+
+.sign-info .title {
+    font-size: 32px;
+    color: #FFF;
+    text-align: center;
+    line-height: 65px;
+}
+
+.sign-info .user-info {
+    width: 820px;
+    margin: 60px auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info .item, .user-info .value {
+    font-size: 20px;
+    font-family: PingFang-Medium;
+}
+
+.user-info .item {
+    color: #141214FF;
+}
+
+.user-info .value {
+    color: #FFAB00FF;
+    padding-left: 6px;
+}
+
+.sign-info .lv2-title {
+    display: inline-block;
+    width: 285px;
+    height: 46px;
+    margin: 65px 0 0 80px;
+    background: url(/images/lv2-title-bg.png);
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    font-family: PingFang-Medium;
+    color: #fff;
+    font-weight: 500;
+}
+
+.sign-info .text {
+    margin: 45px 0 0 115px;
+}
+
+.sign-info .text .routine, .sign-info .text .important {
+    font-size: 20px;
+    font-family: PingFang-Medium;
+    font-weight: 500;
+}
+
+.sign-info .text .routine {
+    color: #202020FF;
+}
+
+.sign-info .text .important {
+    color: #FFAB00FF;
+}
+
+.sign-info .rule {
+    margin: 50px 0 0 80px;
+}
+
+.rule .param {
+    display: inline-block;
+    width: 288px;
+    height: 68px;
+    border: 3px solid #FFAB00FF;
+    border-radius: 8px;
+}
+
+.rule .symbol {
+    font-size: 60px;
+    font-family: PingFang-SC-Bold;
+    color: #FFAB00FF;
+    vertical-align: top;
+    margin: 0 30px;
+}
+
+.sign-info .submit {
+    margin-top: 55px;
+    text-align: center;
+}
+
+.sign-info .submit .select-btn {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    background: #FFAB00FF;
+    border-radius: 30px;
+    line-height: 60px;
+    font-size: 20px;
+    font-family: PingFang-Bold;
+    color: #fff;
+}
